@@ -1,0 +1,9 @@
+.venv/
+.deps/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+*.py[cod]
+.env
+.windsurf/
+*.code-workspace

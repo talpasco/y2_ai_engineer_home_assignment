@@ -1,0 +1,34 @@
+# Example /metrics response after a few local parses
+# HELP yad2_requests_total Total parse requests.
+# TYPE yad2_requests_total counter
+yad2_requests_total 42
+# HELP yad2_errors_total Total parse errors.
+# TYPE yad2_errors_total counter
+yad2_errors_total 1
+# HELP yad2_request_latency_ms Request latency percentile gauges.
+# TYPE yad2_request_latency_ms gauge
+yad2_request_latency_ms{quantile="0.50"} 5.721
+yad2_request_latency_ms{quantile="0.95"} 27.384
+# HELP yad2_cache_hit_ratio Ratio of requests served from cache.
+# TYPE yad2_cache_hit_ratio gauge
+yad2_cache_hit_ratio 0.357143
+# HELP yad2_token_usage_total Token usage by type.
+# TYPE yad2_token_usage_total counter
+yad2_token_usage_total{type="input"} 0
+yad2_token_usage_total{type="output"} 0
+# HELP yad2_cost_usd_total Estimated OpenAI cost in USD.
+# TYPE yad2_cost_usd_total counter
+yad2_cost_usd_total 0.00000000
+# HELP yad2_cost_usd_per_request Average estimated cost in USD.
+# TYPE yad2_cost_usd_per_request gauge
+yad2_cost_usd_per_request 0.0000000000
+# HELP yad2_model_calls_total Model call counts.
+# TYPE yad2_model_calls_total counter
+yad2_model_calls_total{status="success"} 0
+yad2_model_calls_total{status="failure"} 0
+yad2_requests_by_category_total{category="נדל״ן"} 15
+yad2_requests_by_category_total{category="רכב"} 12
+yad2_requests_by_category_total{category="יד_שנייה"} 14
+yad2_requests_by_source_total{source="cache"} 15
+yad2_requests_by_source_total{source="rules"} 27
+

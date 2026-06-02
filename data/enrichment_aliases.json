@@ -1,0 +1,122 @@
+{
+  "version": "0.1",
+  "description": "Small production-style enrichment layer for aliases not present in the compact assignment taxonomy.",
+  "locations": {
+    "cities": {
+      "תל אביב-יפו": ["תל אביב", "תל-אביב", "תל אביב יפו", "tlv", "tel aviv", "tel-aviv"],
+      "ירושלים": ["ירושליים", "jerusalem", "jrslm", "י-ם"],
+      "חיפה": ["haifa"],
+      "רמת גן": ["רמתגן", "ramat gan"],
+      "באר שבע": ["בארשבע", "beer sheva", "beersheva"],
+      "ראשון לציון": ["ראשון", "ראשלצ", "ראשל\"צ", "rishon", "rishon lezion"],
+      "פתח תקווה": ["פתח תקוה", "פת", "פ\"ת", "petah tikva", "petach tikva"],
+      "נתניה": ["netanya"],
+      "הרצליה": ["herzliya"],
+      "רעננה": ["raanana", "ra'anana"],
+      "כפר סבא": ["כפס", "כפ\"ס", "kfar saba"],
+      "אשדוד": ["ashdod"],
+      "אשקלון": ["ashkelon"],
+      "אילת": ["eilat"],
+      "מודיעין-מכבים-רעות": ["מודיעין", "modiin", "modi'in"]
+    },
+    "neighborhoods": {
+      "פלורנטין": {"city": "תל אביב-יפו", "aliases": ["florentin"]},
+      "רמת אביב": {"city": "תל אביב-יפו", "aliases": ["ramat aviv"]},
+      "נווה צדק": {"city": "תל אביב-יפו", "aliases": ["neve tzedek"]},
+      "קטמון": {"city": "ירושלים", "aliases": ["katamon"]},
+      "רחביה": {"city": "ירושלים", "aliases": ["rehavia"]},
+      "הדר": {"city": "חיפה", "aliases": ["hadar"]},
+      "קריית השרון": {"city": "נתניה", "aliases": ["kiryat hasharon"]}
+    },
+    "streets": {
+      "דיזנגוף": {"city": "תל אביב-יפו", "aliases": ["dizengoff"]},
+      "אבן גבירול": {"city": "תל אביב-יפו", "aliases": ["ibn gvirol", "even gvirol"]},
+      "הרצל": {"city": "תל אביב-יפו", "aliases": ["herzl"]},
+      "יפו": {"city": "ירושלים", "aliases": ["jaffa street", "yafo"]},
+      "מוריה": {"city": "חיפה", "aliases": ["moria"]},
+      "ויצמן": {"city": "כפר סבא", "aliases": ["weizmann", "vaitzman"]}
+    }
+  },
+  "vehicle_trims": {
+    "טויוטה": {
+      "קורולה": {
+        "Hybrid": ["הייבריד", "היברידית", "hybrid"],
+        "Sun": ["סאן", "sun"],
+        "GLI": ["gli", "גי אל איי"]
+      },
+      "ראב4": {
+        "Adventure": ["אדוונצ'ר", "adventure"],
+        "XLE": ["xle"],
+        "Hybrid": ["הייבריד", "hybrid"]
+      }
+    },
+    "יונדאי": {
+      "טוסון": {
+        "Elite": ["עלית", "elite"],
+        "Premium": ["פרימיום", "premium"],
+        "Prime": ["פריים", "prime"]
+      },
+      "איוניק": {
+        "Supreme": ["סופרים", "supreme"],
+        "Premium": ["פרימיום", "premium"]
+      }
+    },
+    "קיה": {
+      "ספורטאז׳": {
+        "Urban": ["אורבן", "urban"],
+        "Premium": ["פרימיום", "premium"],
+        "GT-Line": ["gt line", "ג'י טי ליין"]
+      }
+    },
+    "טסלה": {
+      "Model 3": {
+        "Long Range": ["לונג ריינג", "long range"],
+        "Performance": ["פרפורמנס", "performance"]
+      }
+    }
+  },
+  "second_hand_phrases": {
+    "סוני פלייסטיישן": {
+      "sector": "אלקטרוניקה",
+      "subcategory": "טלוויזיות",
+      "brand": "סוני",
+      "aliases": ["פלייסטיישן", "playstation", "ps5", "ps4"]
+    },
+    "נינטנדו סוויץ": {
+      "sector": "אלקטרוניקה",
+      "subcategory": "טלוויזיות",
+      "brand": "נינטנדו",
+      "aliases": ["נינטנדו", "switch", "nintendo switch"]
+    },
+    "שואב דייסון": {
+      "sector": "אלקטרוניקה",
+      "subcategory": "טלוויזיות",
+      "brand": "Dyson",
+      "aliases": ["דייסון", "dyson", "שואב אלחוטי"]
+    },
+    "עגלה יויו": {
+      "sector": "לתינוקות_וסופגנים",
+      "subcategory": "עגלות",
+      "brand": "YOYO",
+      "aliases": ["yoyo", "babyzen", "יויו"]
+    },
+    "קורקינט חשמלי": {
+      "sector": "ספורט_וקמפינג",
+      "subcategory": "אופניים",
+      "aliases": ["קורקינט", "scooter", "electric scooter"]
+    }
+  },
+  "multilingual_aliases": {
+    "אייפון": ["iphone", "i phone", "ayfon"],
+    "סמסונג": ["samsung", "samsoeng"],
+    "שיאומי": ["xiaomi", "mi"],
+    "טויוטה": ["toyota", "toyotta"],
+    "קורולה": ["corolla", "korola"],
+    "יונדאי": ["hyundai", "hundai"],
+    "טוסון": ["tucson", "tuson"],
+    "תל אביב-יפו": ["tel aviv", "tlv"],
+    "ירושלים": ["jerusalem"],
+    "חיפה": ["haifa"]
+  }
+}
+

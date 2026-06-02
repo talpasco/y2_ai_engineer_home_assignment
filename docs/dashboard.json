@@ -1,0 +1,41 @@
+{
+  "title": "Yad2 Search Understanding",
+  "panels": [
+    {
+      "title": "Requests",
+      "type": "stat",
+      "targets": [{"expr": "yad2_requests_total"}]
+    },
+    {
+      "title": "Error Rate",
+      "type": "stat",
+      "targets": [{"expr": "rate(yad2_errors_total[5m]) / rate(yad2_requests_total[5m])"}]
+    },
+    {
+      "title": "p95 Latency",
+      "type": "timeseries",
+      "targets": [{"expr": "yad2_request_latency_ms{quantile=\"0.95\"}"}]
+    },
+    {
+      "title": "Cache Hit Ratio",
+      "type": "timeseries",
+      "targets": [{"expr": "yad2_cache_hit_ratio"}]
+    },
+    {
+      "title": "Category Mix",
+      "type": "barchart",
+      "targets": [{"expr": "yad2_requests_by_category_total"}]
+    },
+    {
+      "title": "OpenAI Cost / Request",
+      "type": "timeseries",
+      "targets": [{"expr": "yad2_cost_usd_per_request"}]
+    },
+    {
+      "title": "Model Call Health",
+      "type": "timeseries",
+      "targets": [{"expr": "yad2_model_calls_total"}]
+    }
+  ]
+}
+

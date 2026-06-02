@@ -1,0 +1,17 @@
+{
+  "version": "0.1",
+  "source": "examples/anonymized_query_logs.jsonl",
+  "description": "Illustrative output of offline synonym mining from anonymized query logs.",
+  "aliases": {
+    "טויוטה": ["טויוטא", "toyota"],
+    "קורולה": ["קורולהה", "korola"],
+    "Hybrid": ["hybrid"],
+    "תל אביב-יפו": ["tel aviv"],
+    "דיזנגוף": ["dizengoff"],
+    "Premium": ["פרימיום"],
+    "YOYO": ["יויו"],
+    "חשמליים": ["קורקינט חשמלי"],
+    "אפל": ["macbook"]
+  }
+}
+
