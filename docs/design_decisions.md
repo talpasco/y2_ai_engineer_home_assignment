@@ -23,8 +23,9 @@ fast, and safely.
 - **Cost.** At 10M queries/month, an LLM call per query is wasteful when most
   queries are head traffic ("3 חדרים תל אביב", "טויוטה קורולה"). Serving those
   deterministically is effectively free. See the cost table in the README.
-- **Latency.** The hot path is in-process (~0.4ms/parse warm) versus 200-800ms
-  for a model round-trip.
+- **Latency.** The hot path is in-process (~0.4ms/parse warm). External model
+  round-trips are provider-dependent and can move from hundreds of milliseconds
+  to seconds, so they are gated, cached, and excluded from the common-path SLA.
 - **Determinism & testability.** A deterministic core can be unit-tested and
   regression-tested; an LLM-only system is hard to pin down and to certify
   against the taxonomy contract.

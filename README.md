@@ -207,11 +207,13 @@ Latency targets and how they are met:
 | Path | Target | This implementation |
 | --- | --- | --- |
 | cache / rules only | p95 ≤ 150ms | in-process parse, no external call; measured ~0.4ms/parse warm on a dev laptop |
-| model path (LLM fallback) | p95 ≤ 600ms | one bounded OpenAI call on genuinely low-confidence queries only; minimal reasoning, output capped, post-validated locally |
+| model path (LLM fallback) | tail path, not hot-path SLA | one bounded OpenAI call on genuinely low-confidence queries only; minimal reasoning, output capped, cached, measured, and post-validated locally |
 
 - the common path is in-process and does not call an external model
 - taxonomy, enrichment, and retrieval indexes are loaded/built once at startup
 - cache hits return immediately from the normalized-query cache
+- external-model latency is provider-dependent, so fallback is treated as a
+  controlled recall path rather than the common serving path
 - throughput: a single instance comfortably exceeds the ≥12 QPS / ~1M-per-day target on the rules path; 10M/month is ~3.9 QPS average
 
 Cost:

@@ -19,7 +19,7 @@
 | Caching | `app/cache.py` |
 | Token/cost tracking | `app/llm.py`, `app/metrics.py` |
 | Monthly cost estimate (10M queries) | `README.md` "Cost Model (10M queries / month)" |
-| Latency targets (p95 ≤ 600ms model / ≤ 150ms cache+rules) | `README.md` "Design Quality" |
+| Latency and fallback strategy | `README.md` "Design Quality" |
 | p50/p95 latency metrics | `app/metrics.py` |
 | Cache hit ratio | `app/metrics.py` |
 | Model call success/failure | `app/metrics.py` |
